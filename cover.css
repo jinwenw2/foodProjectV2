@@ -194,11 +194,11 @@ margin-top: 30px;
   float: left;
 }
 
-.xifuMenu {
+#xifuMenu {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 35%;
 }
 
 #font{
@@ -235,7 +235,7 @@ padding: 2vh;
 }
 
 .imgBorder{
-  border: 10px solid palevioletred;
+  border: 10px solid black;
 }
 
 #right{
