@@ -186,14 +186,33 @@ padding: 2vh;
 .box{
 border: 15px solid lightseagreen;
 background-color: lightseagreen;
+height: 1150px;
 color: white;
+}
+
+.boxMekong{
+border: 15px solid lightseagreen;
+background-color: lightseagreen;
+height: 1000px;
+color: white;
+}
+
+.boxKPOT{
+border: 15px solid lightseagreen;
+background-color: lightseagreen;
+height: 1010px;
+color: white;
+}
+
+.imgBorder{
+  border: 10px solid palevioletred;
 }
 
 #right{
 float: right;
 margin-left: 20px;
-padding-top: 17px;
-padding-bottom: 3px;
+margin-top: 17px;
+margin-bottom: 3px;
 clear: right;
 }
 
