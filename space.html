@@ -26,12 +26,12 @@
     <form id="fs-frm" name="survey-form" action="https://formspree.io/f/mkneyyyq" method="post">
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Name</label>
-          <input type="text" name="name" id="full-name" placeholder="Please enter your name" required="">
+          <input type="text" name="Name" id="full-name" placeholder="Please enter your name" required="">
           <label for="food">Favorite Restaurant:</label>
-          <input type="text" name="restaurant" id="food" placeholder="Please enter a restaurant name">
+          <input type="text" name="Restaurant" id="food" placeholder="Please enter a restaurant name">
           <fieldset id="fs-frm-selects">
             <label for="timely">What do you rate the restaurant above?(In Stars)</label>
-            <select name="timely" id="timely" required="">
+            <select name="Rating" id="rating" required="">
               <option value="" selected="" disabled="">Choose</option>
               <option value="1">1</option>
               <option value="3">2</option>
@@ -40,7 +40,7 @@
               <option value="9">5</option>
             </select>
             <label for="timely">Do you eat school lunch?</label>
-            <select name="quality" id="quality" required="">
+            <select name="Eats Lunch?" id="lunch?" required="">
               <option value="" selected="" disabled="">Choose</option>
               <option value="1">Yes</option>
               <option value="3">No</option>
@@ -48,12 +48,12 @@
             </select>
           </fieldset>
           <label for="message">Other Comments</label>
-          <textarea rows="3" name="message" id="message" placeholder="Place response here" required=""></textarea>
+          <textarea rows="3" name="Other" id="message" placeholder="Place response here" required=""></textarea>
           <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
         </fieldset>
         <input type="submit" value="Send Responses">
       </form>
-
+      
       <style>
       #fs-frm input,
       #fs-frm select,
@@ -159,6 +159,6 @@
       #fs-frm fieldset.locale select[name="state"] {
         margin-right: 3%;
       }
-      </style>
+    </style>
 </body>
 </html>

@@ -66,6 +66,15 @@
     justify-items: center;
   }
 
+  .photogallery2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+
   .photoimg {
     width: 400px;
     height: 300px;
@@ -81,26 +90,42 @@
     color: white;
     }
     
-    .boxMekong{
+  .boxMekong{
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1570px;
     color: white;
-    }
+  }
     
-    .boxKPOT{
+  .boxKPOT{
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 2260px;
     color: white;
-    }
+  }
 
-    .boxFast{
-      border: 15px solid lightseagreen;
-      background-color: lightseagreen;
-      height: 1390px;
-      color: white;
-      }
+  .boxFast{
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 1390px;
+    color: white;
+  }
+
+  .boxMain{
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 600px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .boxTitle{
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 330px;
+    color: white;
+    margin-bottom: 50px;
+  }
     
 }
 
@@ -135,6 +160,15 @@
     justify-items: center;
   }
 
+  .photogallery2 {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+  }
+
   .photoimg {
     width: 400px;
     height: 300px;
@@ -152,17 +186,17 @@
   }
     
   .boxMekong{
-  border: 15px solid lightseagreen;
-  background-color: lightseagreen;
-  height: 625px;
-  color: white;
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 625px;
+    color: white;
   }
     
   .boxKPOT{
-  border: 15px solid lightseagreen;
-  background-color: lightseagreen;
-  height: 898px;
-  color: white;
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 898px;
+    color: white;
   }
 
   .boxFast{
@@ -170,8 +204,23 @@
     background-color: lightseagreen;
     height: 615px;
     color: white;
-    }
+  }
 
+  .boxMain{
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 240px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .boxTitle{
+    border: 15px solid lightseagreen;
+    background-color: lightseagreen;
+    height: 120px;
+    color: white;
+    margin-bottom: 50px;
+  }
 }
 
 body {
@@ -194,7 +243,7 @@ body {
 
 .firstparagraph {
 font-family: 'Roboto', sans-serif;
-font-size: large;
+font-size: 30px;
 }
 
 .info {
@@ -228,6 +277,11 @@ margin-top: 30px;
 font-family: 'Roboto', sans-serif;
 text-align: center;
 }
+
+.fontMainPage{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  }
 
 table {
 border-spacing: 0px;
