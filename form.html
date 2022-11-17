@@ -8,15 +8,49 @@
     <title>Document</title>
 </head>
 <body>
-    <form action=”mailto:whytutoringwork@gmail.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
-        <label for="name">Name:</label>
-        <br>
-        <input type="text" id="name" name="name">
-        <br>
-        <label for="ContactCommentt">Message:</label>
-        <br>
-        <textarea id=”ContactCommentt” rows=”6″ cols=”20″>
-        <input type="submit" value="Send">
-    </form>
+    <div class="navbar">
+        <a href="main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Places to Eat
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="xifu.html">XiFu Food</a>
+            <a href="mekong.html">Mekong BK</a>
+            <a href="kpot.html">KPot</a>
+            <a href="quick.html">Fast Food or Delis</a>
+            <a href="form.html">Form</a>
+          </div>
+        </div>
+    </div>
+    <form action="https://formspree.io/f/mkneyyyq" method="POST">
+    <label>
+        Name:
+        <input type="name" name="Name">
+    </label>
+    <label>
+        Favorite Restaurant:
+        <textarea name="Restaurant"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <label>
+        Do you eat school lunch?
+        <textarea name="response"></textarea>
+    </label>
+    <fieldset id="fs-frm-selects">
+        <label for="rating">What do you rate the restaurant aboce?</label>
+        <select name="timely" id="timely" required="">
+          <option value="" selected="" disabled="">Choose</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+    </fieldset>
+    <label for="comments">Other Comments</label>
+    <textarea name="message" id="message" placeholder="Place text here"></textarea>
+    <button type="submit">Send</button>
+</form>
 </body>
 </html>
