@@ -4,42 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey</title>
     <link rel="stylesheet" href="cover.css">
 </head>
 <body>
-    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+  <div class="navbar">
+    <a href="main.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Places to Eat and Survey
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="xifu.html">XiFu Food</a>
+        <a href="mekong.html">Mekong BK</a>
+        <a href="kpot.html">KPot</a>
+        <a href="quick.html">Fast Food or Delis</a>
+        <a href="space.html">Form</a>
+      </div>
+    </div>
+  </div>
+    <form id="fs-frm" name="survey-form" action="https://formspree.io/f/mkneyyyq" method="post">
         <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <label for="email-address">Email Address</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="full-name">Name</label>
+          <input type="text" name="name" id="full-name" placeholder="Please enter your name" required="">
+          <label for="food">Favorite Restaurant:</label>
+          <input type="text" name="restaurant" id="food" placeholder="Please enter a restaurant name">
           <fieldset id="fs-frm-selects">
-            <label for="timely">1. The service provided was completed in a timely manner.</label>
+            <label for="timely">What do you rate the restaurant above?(In Stars)</label>
             <select name="timely" id="timely" required="">
               <option value="" selected="" disabled="">Choose</option>
-              <option value="1">Strongly Agree</option>
-              <option value="3">Agree</option>
-              <option value="5">Neutral</option>
-              <option value="7">Disagree</option>
-              <option value="9">Strongly Disagree</option>
+              <option value="1">1</option>
+              <option value="3">2</option>
+              <option value="5">3</option>
+              <option value="7">4</option>
+              <option value="9">5</option>
             </select>
-            <label for="timely">2. The quality of work was high in quality.</label>
+            <label for="timely">Do you eat school lunch?</label>
             <select name="quality" id="quality" required="">
               <option value="" selected="" disabled="">Choose</option>
-              <option value="1">Strongly Agree</option>
-              <option value="3">Agree</option>
-              <option value="5">Neutral</option>
-              <option value="7">Disagree</option>
-              <option value="9">Strongly Disagree</option>
+              <option value="1">Yes</option>
+              <option value="3">No</option>
+              <option value="5">Sometimes</option>
             </select>
           </fieldset>
-          <label for="message">Additional Comments</label>
-          <textarea rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor." required=""></textarea>
+          <label for="message">Other Comments</label>
+          <textarea rows="3" name="message" id="message" placeholder="Place response here" required=""></textarea>
           <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
         </fieldset>
         <input type="submit" value="Send Responses">
-      </form><style>/* reset */
+      </form>
+
+      <style>
       #fs-frm input,
       #fs-frm select,
       #fs-frm textarea,
@@ -69,7 +84,6 @@
         align-items: baseline;
       }
       
-      /* border, padding, margin, width */
       #fs-frm input,
       #fs-frm select,
       #fs-frm textarea,
@@ -129,7 +143,6 @@
         appearance: radio;
       }
       
-      /* address, locale */
       #fs-frm fieldset.locale input[name="city"],
       #fs-frm fieldset.locale select[name="state"],
       #fs-frm fieldset.locale input[name="postal-code"] {
@@ -148,3 +161,4 @@
       }
       </style>
 </body>
+</html>
