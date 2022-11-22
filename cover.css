@@ -1,17 +1,19 @@
-@media screen and (min-width: 1650px)
-{
+/*There is a lot of CSS code here. For each of the medias, we had a navbar, photo gallery, and a textbox display. It was necessary for these to be
+media because these were all things that would be affected by screen width.*/
+@media screen and (min-width: 1650px) {
+  /*In order to create the navbar, we used a flexbox.*/
   .navbar {
     background-color: lightseagreen;
     display: flex;
     align-items: center;
     font-family: Arial;
   }
-
+  /*In this resolution, there will be no dropdown.*/
   .dropbtn {
-    display:none;
+    display: none;
   }
 
-  .navbar a{
+  .navbar a {
     float: left;
     font-size: 16px;
     color: white;
@@ -19,7 +21,7 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-
+  /*In this resolution, the photo gallery should be at max size.*/
   .photogallery {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -45,37 +47,39 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
   }
+  /*Here, we changed the sizes of the borders of our text boxes depending on screen size. This was important to make sure all of our
+  information was formatted correctly.*/
 
-  .box{
+  .box {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1225px;
     text-align: center;
     color: white;
   }
-    
-  .boxMekong{
+
+  .boxMekong {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 670px;
     color: white;
   }
-    
-  .boxKPOT{
+
+  .boxKPOT {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 950px;
     color: white;
   }
 
-  .boxFast{
+  .boxFast {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 615px;
     color: white;
   }
 
-  .boxMain{
+  .boxMain {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 240px;
@@ -83,7 +87,7 @@
     margin-top: 50px;
   }
 
-  .boxTitle{
+  .boxTitle {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 120px;
@@ -92,8 +96,7 @@
   }
 }
 
-@media screen and (max-width: 1649px)
-{
+@media screen and (max-width: 1649px) {
   .navbar {
     overflow: hidden;
     background-color: lightseagreen;
@@ -112,7 +115,7 @@
     color: white;
     padding: 14px 16px;
     background-color: lightseagreen;
-    margin: 1; 
+    margin: 1;
   }
 
   .dropdown-content {
@@ -120,9 +123,9 @@
     position: absolute;
     background-color: teal;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  
+
   .dropdown-content a {
     float: none;
     color: black;
@@ -131,20 +134,21 @@
     display: block;
     text-align: left;
   }
-  
+  /*This adds a hover outline to our dropdown so that viewers can more easily identify where they are clicking.*/
   .dropdown-content a:hover {
     background-color: black;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
     background-color: rgb(12, 12, 12);
   }
 
-  .navbar a{
+  .navbar a {
     float: left;
     font-size: 16px;
     color: rgb(250, 250, 250);
@@ -177,35 +181,35 @@
     box-shadow: 5px 5px 5px gray;
   }
 
-  .box{
+  .box {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1350px;
     color: white;
-    }
-    
-  .boxMekong{
+  }
+
+  .boxMekong {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1100px;
     color: white;
   }
-    
-  .boxKPOT{
+
+  .boxKPOT {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1400px;
     color: white;
   }
 
-  .boxFast{
+  .boxFast {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 900px;
     color: white;
   }
 
-  .boxMain{
+  .boxMain {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 400px;
@@ -213,18 +217,17 @@
     margin-top: 50px;
   }
 
-  .boxTitle{
+  .boxTitle {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 230px;
     color: white;
     margin-bottom: 50px;
   }
-    
+
 }
 
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
   .navbar {
     overflow: hidden;
     background-color: lightseagreen;
@@ -243,7 +246,7 @@
     color: white;
     padding: 14px 16px;
     background-color: lightseagreen;
-    margin: 1; 
+    margin: 1;
   }
 
   .dropdown-content {
@@ -251,9 +254,9 @@
     position: absolute;
     background-color: teal;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  
+
   .dropdown-content a {
     float: none;
     color: black;
@@ -262,20 +265,21 @@
     display: block;
     text-align: left;
   }
-  
+
   .dropdown-content a:hover {
     background-color: black;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
     background-color: rgb(12, 12, 12);
   }
 
-  .navbar a{
+  .navbar a {
     float: left;
     font-size: 16px;
     color: rgb(250, 250, 250);
@@ -290,7 +294,7 @@
     grid-template-rows: repeat(6, 1fr);
     justify-items: center;
   }
-
+  /*This is the smallest screen size. Photo gallery had to be changed here so that it will only be displayed on 1 column to fit.*/
   .photogallery2 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -308,35 +312,36 @@
     box-shadow: 5px 5px 5px gray;
   }
 
-  .box{
+  /*Text boxes were lengthend with height here to accomodate for the extra text.*/
+  .box {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 2250px;
     color: white;
-    }
-    
-  .boxMekong{
+  }
+
+  .boxMekong {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1570px;
     color: white;
   }
-    
-  .boxKPOT{
+
+  .boxKPOT {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 2260px;
     color: white;
   }
 
-  .boxFast{
+  .boxFast {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 1390px;
     color: white;
   }
 
-  .boxMain{
+  .boxMain {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 600px;
@@ -344,21 +349,21 @@
     margin-top: 50px;
   }
 
-  .boxTitle{
+  .boxTitle {
     border: 15px solid lightseagreen;
     background-color: lightseagreen;
     height: 330px;
     color: white;
     margin-bottom: 50px;
   }
-    
+
 }
 
 body {
   background-color: lightskyblue;
 }
 
-.title{
+.title {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   background-color: lightblue;
@@ -373,25 +378,25 @@ body {
 }
 
 .firstparagraph {
-font-family: 'Roboto', sans-serif;
-font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
 
 .info {
-font-family: 'Roboto', sans-serif;
-font-size: large;
-text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  text-align: center;
 }
 
-.centerImg{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-border: 15px solid lightseagreen;
-margin-top: 30px;
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 15px solid lightseagreen;
+  margin-top: 30px;
 }
-
+/*We used flex here to display the store front and the menu horizontally and properly.*/
 .fleximages {
   display: flex;
   float: left;
@@ -404,74 +409,77 @@ margin-top: 30px;
   height: 35%;
 }
 
-#font{
-font-family: 'Roboto', sans-serif;
-text-align: center;
-}
-
-.fontMainPage{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  }
-
-table {
-border-spacing: 0px;
-margin-left: auto;
-margin-right: auto;
-}
-
-th, tr {
-border: 1px solid black;
-color: black;
-}
-
-td {
-padding: 2vh;
-border: 1px solid black;
-}
-
-col:nth-child(even){
-background-color: lightgray;
-color:black;
-}
-
-col:nth-child(odd){
-background-color: rgb(82, 171, 206);
-}
-
-tr th {
-color: black;
-padding: 2vh;
-}
-
-.imgBorder{
-  border: 10px solid black;
-  height:50%;
-}
-
-#right{
-float: right;
-margin-left: 20px;
-margin-top: 17px;
-margin-bottom: 3px;
-clear: right;
-object-fit: cover;
-}
-
-.impressions{
+#font {
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
-.rightTop{
+.fontMainPage {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+/*We made a table here and styled it so that it didn't look too basic.*/
+table {
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+tr {
+  border: 1px solid black;
+  color: black;
+}
+
+td {
+  padding: 2vh;
+  border: 1px solid black;
+}
+
+col:nth-child(even) {
+  background-color: lightgray;
+  color: black;
+}
+
+col:nth-child(odd) {
+  background-color: rgb(82, 171, 206);
+}
+
+tr th {
+  color: black;
+  padding: 2vh;
+}
+
+.imgBorder {
+  border: 10px solid black;
+  height: 50%;
+}
+
+#right {
+  float: right;
+  margin-left: 20px;
+  margin-top: 17px;
+  margin-bottom: 3px;
+  clear: right;
+  object-fit: cover;
+}
+
+.impressions {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.rightTop {
   margin-top: 30px;
 }
 
-#fs-frm input, #fs-frm select, #fs-frm textarea, #fs-frm #card-element{
-  border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: .75em 1rem;
   margin-bottom: 1.5rem;
-  }
-
-
+}
